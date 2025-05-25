@@ -176,7 +176,7 @@ class Configuration:
     def __init__(self):
         """Initialize configuration by loading from environment variables."""
         # Load environment variables from .env file if it exists
-        load_dotenv()
+        load_dotenv(dotenv_path='/app/.env')
         
         # Set environment mode first
         env_mode_str = os.getenv("ENV_MODE", EnvMode.LOCAL.value)

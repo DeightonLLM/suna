@@ -2,6 +2,8 @@ FROM node:20-slim
 
 WORKDIR /app
 
+ENV NEXT_PUBLIC_BACKEND_URL="http://localhost:8000/api"
+
 # Copy package files first for better layer caching
 COPY package*.json ./
 

@@ -1,0 +1,12 @@
+services:
+  backend:
+    volumes:
+      - H:/My Drive/Dubz_PLAYGROUND/suna/backend/.env:/app/.env:ro
+  
+  worker:
+    volumes:
+      - H:/My Drive/Dubz_PLAYGROUND/suna/backend/.env:/app/.env:ro
+  
+  frontend:
+    volumes:
+      - H:/My Drive/Dubz_PLAYGROUND/suna/frontend/.env.local:/app/.env.local:ro
